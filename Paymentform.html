@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h2>Contact information</h2>
+        <!--here we have to put a attribute called name where we can perfome the values
+        which  will go inside the browser.
+    the name attribute is also unique  -->
+    <!--Required attribute is used for ask the user that this field is requied-->
+        <p>Name:* <input type="text" name="name" required></p>
+        <!--we use <input radio because for chossing one from another
+        here we use the same name attribute value because in radio this will go for both the values
+    fieldset attribute which can be used for making a fieldset around the male and female area
+<legend>content<legend> here we can use it as for the  creating the area-->
+    <fieldset>
+        <legend>Gender</legend>
+        <p>
+            Male*:<input type="radio" name="Gender" id="" >Female*:<input type="radio" name="Gender" id="">
+
+        </p>
+    </fieldset>
+    <!--textarea attribute is used for making multiple lines as input-->
+    <p>Adress:* <textarea name="address" id="address" cols="10" rows="5" required></textarea></p>
+    <p>Email:* <input type="email" name="email" id="email" required></p>
+    <p>Pin Code:* <input type="number" name="pincode" id="pincode" required></p>
+ <br>
+ <h2>Payment Information</h2>
+ <p>Card Type:* 
+     <!--Select tag is use to take an input from multiple inputs.-->
+     <select name="cardtype" id=" cardtype">
+         <!--For options we use option tag-->
+         <option value="">Select a Card Type</option>
+         <option value="visa">Visa</option>
+         <option value="mastercard">Mastercard</option>
+         <option value="Rupay">Rupay</option>
+     </select>
+ </p>
+ <p>Card Number:* <input type="number" name="Cardnumber" id="Cardnumber" required></p>
+ <!--Date input type is used for take a date from the user-->
+ <p>Card Expiry :* <input type="date" name="Cardexpiry" id="Cardexpiry" required></p>
+ <!--password input type is used for take a input as password from the user-->
+ <p>Cvv :*<input type="password" name="CVV" id="CVV" required></p>
+ <!--To make a button we use <input type=Submit value=""-->
+ <input type="submit" value="Pay Now">
+    </form>
+    
+</body>
+</html>
